@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Trabajadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>GESTIONAR TRABAJADORES</h1>
+
+    <div class="contenedor">
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <input type="text" id="puesto" placeholder="Puesto" required>
+            <input type="number" id="salario" placeholder="Salario" required>
+            <button type="submit">Agregar Trabajador</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Puesto</th>
+                    <th>Salario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaTrabajadores"></tbody>
+        </table>
+        <button id="descargarExcel">Descargar Excel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

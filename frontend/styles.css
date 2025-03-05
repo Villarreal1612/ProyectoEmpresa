@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #2c3e50, #4c6c8b); /* Fondo oscuro con algo de claridad */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    position: relative; /* Permite posicionar el botón dentro del contenedor */
+}
+
+/* Estilos del título */
+h1 {
+    color: white;
+    margin-top: 50px; /* Espacio desde la parte superior */
+    margin-bottom: 50px; /* Espacio entre el título y el formulario */
+    font-size: 28px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #217dbb;
+}
+
+/* Botón de descarga del Excel */
+#descargarExcel {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px; /* Lo coloca en la parte inferior */
+    right: 10px; /* Lo coloca en la parte derecha */
+}
+
+#descargarExcel:hover {
+    background-color: #219150;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 50px; /* Hace que la tabla se mueva verticalmente */
+}
+
+/* Cabecera de la tabla */
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+
+/* Botones de acción */
+button.editar {
+    background: #f39c12;
+}
+
+button.editar:hover {
+    background: #e08e0b;
+}
+
+button.eliminar {
+    background: #e74c3c;
+}
+
+button.eliminar:hover {
+    background: #c0392b;
+}
