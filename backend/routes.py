@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from database import trabajadores_collection
-from models import Trabajador
+from backend.database import trabajadores_collection
+from backend.models import Trabajador
 from bson import ObjectId
 import pandas as pd
 import io
