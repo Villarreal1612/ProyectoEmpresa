@@ -2,6 +2,16 @@ const API_URL = "https://gestion-trabajadores-backend.onrender.com";
 
 document.addEventListener("DOMContentLoaded", cargarTrabajadores);
 
+async function obtenerTrabajadores() {
+    try {
+        const respuesta = await fetch(`${API_URL}/trabajadores`);
+        const datos = await respuesta.json();
+        console.log(datos);
+    } catch (error) {
+        console.error("Error al obtener trabajadores:", error);
+    }
+}
+
 document.getElementById("formulario").addEventListener("submit", async (event) => {
     event.preventDefault();
     
